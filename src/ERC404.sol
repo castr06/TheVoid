@@ -386,12 +386,6 @@ abstract contract ERC404 is Ownable {
         if (_ownerOf[id] != address(0)) {
             revert AlreadyExists();
         }
-        /*
-        // Prevents tokens from being remade if burned
-        if (_ownerOf[id] == address(0)) {
-            revert AlreadyExists();
-        }
-        */
 
         _ownerOf[id] = to;
         _owned[to].push(id);
