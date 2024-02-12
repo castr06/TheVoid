@@ -1,0 +1,11 @@
+{
+  "name": "Empty",
+  "description": "Tokens or lack thereof that are on the new erc404 standard",
+  "image": "https://raw.githubusercontent.com/castr06/Void/main/assets/5.gif",
+  "attributes": [
+    {
+      "trait_type": "Shape",
+      "value": "Empty"
+    }
+  ]
+}
