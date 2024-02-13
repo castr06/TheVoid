@@ -1,7 +1,7 @@
 {
   "name": "Square",
   "description": "Tokens or lack thereof that are on the new erc404 standard",
-  "image": "https://raw.githubusercontent.com/castr06/TheVoid/main/assets/2.gif",
+  "image": "https://raw.githubusercontent.com/castr06/TheVoid/master/assets/2.gif",
   "attributes": [
   {
     "trait_type": "Shape",
