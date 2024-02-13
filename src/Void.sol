@@ -1,4 +1,4 @@
-//SPDX-License-Identifier: UNLICENSED
+//SPDX-License-Identifier: MIT
 pragma solidity ^0.8.2;
 
 import "./ERC404.sol";
@@ -8,7 +8,7 @@ contract Void is ERC404 {
     string public dataURI;
     string public baseTokenURI;
 
-    constructor(address _owner) ERC404("Void-test", "TEST", 18, 10000, _owner) {
+    constructor(address _owner) ERC404("void404", "void404", 18, 10000, _owner) {
         balanceOf[_owner] = 10000 * 10 ** 18;
         whitelist[_owner] = true;
     }
