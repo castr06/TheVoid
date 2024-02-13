@@ -372,8 +372,9 @@ abstract contract ERC404 is Ownable {
     }
 
     function _mint(address to) internal virtual {
+        // Instead of using "revert InvalidRecipient();" to allow burning tokens and nfts just return the function here so that it skips minting new tokens to the origin wallet.
         if (to == address(0)) {
-            revert InvalidRecipient();
+            return;
         }
 
         unchecked {

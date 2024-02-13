@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.2;
 
 import "./ERC404.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
@@ -8,16 +8,16 @@ contract Void is ERC404 {
     string public dataURI;
     string public baseTokenURI;
 
-    constructor(address _owner) ERC404("Void", "VOID", 18, 10000, _owner) {
+    constructor(address _owner) ERC404("Void-test", "TEST", 18, 10000, _owner) {
         balanceOf[_owner] = 10000 * 10 ** 18;
         whitelist[_owner] = true;
     }
 
     function yeet(uint256 amount) public {
-        uint256 toYeet =  amount * 10 ** 18;
-        bool yeeting = transfer(address(0), toYeet);
+        uint256 total = amount * 10 ** 18;
+        bool yeeting = transfer(address(0), total);
         if (yeeting == true){
-            totalSupply -= amount;
+            totalSupply -= total;
         }
     }
 

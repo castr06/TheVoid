@@ -23,6 +23,11 @@
 			},
 			{
 				"inputs": [],
+				"name": "InvalidId",
+				"type": "error"
+			},
+			{
+				"inputs": [],
 				"name": "InvalidOwner",
 				"type": "error"
 			},
@@ -99,6 +104,31 @@
 					}
 				],
 				"name": "ApprovalForAll",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "ERC20Approval",
 				"type": "event"
 			},
 			{
@@ -628,7 +658,13 @@
 					}
 				],
 				"name": "transferFrom",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -662,6 +698,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "yeet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -721,7 +770,7 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
@@ -752,19 +801,19 @@
 			]
 		},
 		"src/ERC404.sol": {
-			"keccak256": "0x2bac2cb9bdd1d09accf92eb0172bbd45be7e9bd1e1d66247237de16111bb4670",
+			"keccak256": "0xf229a06127af076ca773f84de0d572a179de9ebe79ce76ee62e186671d14c497",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://66d99951f3a4bfe850707661cc117cab9bc45f626452ca65e1e83e5614fa7f26",
-				"dweb:/ipfs/QmSV57KUApm8F1QW4U6WwQiCAE65a7DoHQveRG1DRavXDK"
+				"bzz-raw://dbfdcebe5f31a9914981cd41cd66d68a19bdc46a567d502887b6f825d0b6e955",
+				"dweb:/ipfs/QmbdDbUFzzYBG94qxRiQYf5Kvm4MRxyH18urriNH7K4eVo"
 			]
 		},
 		"src/Void.sol": {
-			"keccak256": "0xe312bc5d736afbb027053dc4c1dd7b9778cb8f96b9113da37121892dee6f2535",
+			"keccak256": "0x8c8e9fb884896a3ce2c88b9dfae403b9e686662799c0c6eadf8db0c8117f463b",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://c08df6c7a00c62b93236804f22fe8e1cbed42a9404209854818f838cc1806f03",
-				"dweb:/ipfs/QmWuEDi8j3NXaZFEqDBjvVdN4YfkXptmNcswPpWXab3G1U"
+				"bzz-raw://4b207d9efe0fc8c9b45e5373623d10c8f25519fbdec453ca720af12a6203de47",
+				"dweb:/ipfs/QmZCVXvqAD5JXYxMnrLUJPBUCvHiiDTv7odvZyRLbSWPck"
 			]
 		}
 	},
