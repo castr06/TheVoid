@@ -1,6 +1,6 @@
-# NOTICE
+# void404
 
-This repository is no longer being actively maintained. All efforts on ERC404 have migrated [here](https://github.com/Pandora-Labs-Org/erc404).
+This project is an experimental ERC404 token built to answer the question: What happens when you give holders full control of deflation?
 
 # ERC404
 
